@@ -10,6 +10,8 @@ public class AnimationsEvent : MonoBehaviour
     public AudioClip Attack2;
     public AudioClip Jump;
     public AudioClip Fall;
+     public AudioSource audioa;
+    public AudioClip audiox;
 
     public GameObject Attack1Particule;
     public GameObject Attack1Particule1;
@@ -62,6 +64,11 @@ public class AnimationsEvent : MonoBehaviour
         if (other.gameObject.tag == "Like")
         {
             audioSource.PlayOneShot(CollectSound);
+        }
+
+        if (other.gameObject.tag == "Camera2")
+        {
+            audioa.PlayOneShot(audiox);
         }
     }
 

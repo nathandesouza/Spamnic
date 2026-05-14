@@ -10,11 +10,11 @@ public class AudioManager : MonoBehaviour
 
     void Awake()
     {
-        // Singleton pattern - garante que só existe um AudioManager
+        // Singleton pattern - garante que sï¿½ existe um AudioManager
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // Mantém o áudio entre cenas
+            DontDestroyOnLoad(gameObject); // Mantï¿½m o ï¿½udio entre cenas
         }
         else
         {
@@ -24,7 +24,7 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-        // Se não tiver AudioSource, adiciona um
+        // Se nï¿½o tiver AudioSource, adiciona um
         if (audioSource == null)
         {
             audioSource = GetComponent<AudioSource>();

@@ -8,6 +8,8 @@ public class CameraAnimEnd : MonoBehaviour
     public Image apresentacao;
     public Animator apr;
     public GameObject Player;
+    public AudioSource audioa;
+    public AudioClip audiox;
 
     private void Start()
     {
@@ -26,6 +28,11 @@ public class CameraAnimEnd : MonoBehaviour
         Player.gameObject.SetActive(false);
     }
 
+    public void SOM()
+    {
+        audioa.PlayOneShot(audiox);
+    }
+
     public void Desativar()
     {
         apr.SetTrigger("Desligar");
@@ -37,6 +44,7 @@ public class CameraAnimEnd : MonoBehaviour
         Destroy(apresentacao.gameObject);
         
     }
+
 
 
 }

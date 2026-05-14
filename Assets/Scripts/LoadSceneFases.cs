@@ -9,7 +9,8 @@ public class LoadSceneFases : MonoBehaviour
     public CinemachineCamera cameraoriginal;
     public Camera trocadeCena;
     public Image FadeOutCena;
-
+    public AudioSource troca;
+    public AudioClip musicatroca;
 
     private void Start()
     {
@@ -30,6 +31,7 @@ public class LoadSceneFases : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            troca.PlayOneShot(musicatroca);
             cameraoriginal.gameObject.SetActive(false);
             trocadeCena.gameObject.SetActive(true);
             FadeOutCena.gameObject.SetActive(true);
@@ -39,8 +41,8 @@ public class LoadSceneFases : MonoBehaviour
 
     IEnumerator MyCoroutine()
     {
-        yield return new WaitForSeconds(1f);
-
+        yield return new WaitForSeconds(3f);
+        
         LoadScene();
     }
 }

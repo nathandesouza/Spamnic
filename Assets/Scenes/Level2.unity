@@ -5192,7 +5192,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1087939230
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6867,6 +6867,8 @@ MonoBehaviour:
   Attack2: {fileID: 8300000, guid: fdbf9adce54ce8b49ada991a7f95631c, type: 3}
   Jump: {fileID: 8300000, guid: bd42b22e9491d244a975f2f7b6fbb8a5, type: 3}
   Fall: {fileID: 0}
+  audioa: {fileID: 0}
+  audiox: {fileID: 0}
   Attack1Particule: {fileID: 5880797563127281583, guid: 265d3a5ba69981a4698ceabcedf368b0, type: 3}
   Attack1Particule1: {fileID: 5339739117810204693, guid: 26e1cb216e3635e4a820f58a1118d6b9, type: 3}
   SpawnPointAttack1: {fileID: 48605491}
@@ -7030,7 +7032,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1497536076
 RectTransform:
   m_ObjectHideFlags: 0

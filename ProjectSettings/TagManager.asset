@@ -12,6 +12,7 @@ TagManager:
   - Curativo
   - Box
   - Explosao
+  - Camera2
   layers:
   - Default
   - TransparentFX
